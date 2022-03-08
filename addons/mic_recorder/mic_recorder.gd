@@ -7,7 +7,6 @@ func _on_Record_toggled(button_pressed):
 	$VBoxContainer/Test.disabled = button_pressed
 	$VBoxContainer/Save.disabled = button_pressed
 	record.set_recording_active(button_pressed)
-	$AudioStreamRecord.playing = button_pressed
 	
 	if not button_pressed:
 		$TestPlayer.stream = record.get_recording()
